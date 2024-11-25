@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e96f04, #e82705);
+  color: rgb(17, 16, 16);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.visualizer {
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#array-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px dashed #fff;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+  margin: 0 3px;
+  background: linear-gradient(to top, #54f02d, #ff4b2b);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar:hover {
+  transform: scale(1.1);
+}
+
+.bar.active {
+  background: linear-gradient(to top, #4facfe, #00f2fe);
+}
+
+.bar.sorted {
+  background: linear-gradient(to top, #6a11cb, #2575fc);
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  background: linear-gradient(to right, #ff7b63, #ff947f);
+  transform: scale(1.1);
+}
+
+.info-panel {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#progress-bar {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+}
+
+#progress {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transition: width 0.3s ease-in-out;
+}

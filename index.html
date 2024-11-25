@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Merge Sort Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="content">
+      <div class="visualizer">
+        <h1>Enhanced Merge Sort Visualizer</h1>
+        <p id="explanation">Click "Generate New Array" to start!</p>
+        <div class="controls">
+          <button id="generate">Generate New Array</button>
+          <button id="start">Start Sorting</button>
+          <button id="pause">Pause</button>
+          <button id="resume">Resume</button>
+        </div>
+        <div id="array-container"></div>
+      </div>
+      <div class="info-panel">
+        <h2>What is Merge Sort?</h2>
+        <p>
+          <strong>Merge Sort</strong> is a divide-and-conquer algorithm. It recursively divides the array into two halves, sorts them, 
+          and then merges the sorted halves back together. Merge Sort has a time complexity of <strong>O(n log n)</strong>, making it much more efficient than simple algorithms like bubble sort.
+        </p>
+        <h3>How Merge Sort Works:</h3>
+        <p>
+          Merge Sort works by recursively dividing the array into smaller halves until each sub-array has only one element (which is trivially sorted). Then, the sub-arrays are merged back together in a sorted order.
+        </p>
+        <h3>Step-by-Step Process:</h3>
+        <ul id="steps">
+          <li><strong>Step 1:</strong> Split the array into two halves.</li>
+          <li><strong>Step 2:</strong> Recursively sort each half.</li>
+          <li><strong>Step 3:</strong> Merge the two sorted halves back together in a sorted order.</li>
+        </ul>
+        <h3>Sorting Progress:</h3>
+        <div id="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
